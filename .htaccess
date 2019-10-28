@@ -1,0 +1,19 @@
+<IfModule mod_rewrite.c>
+RewriteEngine on
+
+RewriteRule ^index\.php$ media.php?module=home [L]
+
+RewriteRule ^produk-(.*)\.html$ media.php?module=detailproduk&id=$1 [L]
+RewriteRule ^semua-produk\.html$ media.php?module=semuaproduk [L]
+RewriteRule ^halproduk-(.*)\.html$ media.php?module=semuaproduk&halproduk=$1 [L]
+
+RewriteRule ^kategori-([0-9]+)-(.*)\.html$ media.php?module=detailkategori&id=$1 [L]
+RewriteRule ^halkategori-([0-9]+)-(.*)\.html$ media.php?module=detailkategori&id=$1&halkategori=$2 [L]
+
+RewriteRule ^semua-cart\.html$ media.php?module=semuacart [L]
+RewriteRule ^cart-(.*)\.html$ media.php?module=semuacart&id=$1 [L]
+
+RewriteRule ^contact-person\.html$ media.php?module=contactperson&id=$1 [L]
+RewriteRule ^contact-action\.html$ media.php?module=contactaction&id=$1 [L]
+
+</IfModule>
