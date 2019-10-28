@@ -15,4 +15,6 @@
 	$f             = mysqli_fetch_array($pilihtemplate);
   
 	include "$f[folder]/template.php"; 
+	
+	//Perubahan Pertama
 ?>
