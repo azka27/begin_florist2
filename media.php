@@ -17,4 +17,5 @@
 	include "$f[folder]/template.php"; 
 	
 	//Perubahan Pertama
+	//Perbahan Kedua Melalui remote
 ?>
